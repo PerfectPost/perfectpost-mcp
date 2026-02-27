@@ -15,11 +15,20 @@ A Claude Code skill that connects to the [PerfectPost](https://perfectpost.socia
 
 ### 1. Install the skill
 
+**Option A — via the skills CLI** (requires Node.js):
+
 ```bash
-claude skill install https://github.com/PerfectPost/perfectpost-mcp/releases/latest/download/perfectpost-mcp.skill
+npx skills add PerfectPost/perfectpost-mcp
 ```
 
-This automatically configures the PerfectPost MCP server in Claude Code.
+**Option B — manual download**:
+
+```bash
+curl -L https://github.com/PerfectPost/perfectpost-mcp/releases/latest/download/perfectpost-mcp.skill \
+  -o /tmp/perfectpost-mcp.skill
+unzip /tmp/perfectpost-mcp.skill -d ~/.claude/skills/
+rm /tmp/perfectpost-mcp.skill
+```
 
 ### 2. Authenticate
 
@@ -37,7 +46,7 @@ Show me my LinkedIn stats for last month
 
 ---
 
-## Manual MCP setup (without skill install)
+## Manual MCP setup (without the skill)
 
 If you prefer to configure the MCP server directly:
 
