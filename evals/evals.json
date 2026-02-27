@@ -1,0 +1,23 @@
+{
+  "skill_name": "perfectpost-mcp",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "I've been using PerfectPost for 6 months. Show me the statistics for my LinkedIn posts from last month — impressions, likes, comments — and tell me which posts performed best.",
+      "expected_output": "Claude uses get_posts_stats_summary to retrieve aggregated stats, then list_posts + get_post to identify top-performing posts. It presents a clear summary with key metrics and a ranked list of top publications.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "I want to publish a LinkedIn post about the importance of personal branding for developers. Write it by imitating my style (look at my recent posts), create a draft, and schedule it for tomorrow at 8:30am.",
+      "expected_output": "Claude uses list_posts and get_post to analyze the user's style, creates a draft with create_draft inspired by the observed tone, then uses schedule_draft to schedule the post for the next day at 8:30am.",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "Find all my LinkedIn posts that mention AI or machine learning. Which ones generated the most engagement? Should I be posting more on this topic?",
+      "expected_output": "Claude uses search_posts with multiple keywords (e.g. 'AI', 'machine learning', 'ChatGPT') to find relevant posts, retrieves metrics with get_post for each result, compares engagement, and gives a data-backed recommendation on content strategy.",
+      "files": []
+    }
+  ]
+}

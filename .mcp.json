@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "perfectpost": {
+      "type": "http",
+      "url": "https://mcp.perfectpost.social/mcp",
+      "clientId": "dnakgf4sbal93ukngisqgb3vo",
+      "callbackPort": 6274
+    }
+  }
+}
